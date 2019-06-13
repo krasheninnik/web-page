@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en"></html>
+<head>
+    <meta charset="utf-8">
+    <title> The University </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    
+    <!-- Optional for view for any device, not only phone -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+            h1 {
+                text-align: center;
+            }
+
+            table, td, th {
+              border: 1px solid black;
+              text-align: center
+            }
+            
+            table {
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            th {
+              height: 50px;
+            }
+
+            caption {
+                font-size: large;
+                font-weight: bold;
+            }
+
+            </style>
+</head>
+
+<body>
+   
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-10">The University</h1>
+          </div>
+        </div>
+
+     <button type="button"  class="btn btn-dark" onclick="showTablePersons()">Show table of Persons</button>
+     <button type="button"  class="btn btn-dark" onclick="showTableTeachers()">Show table of Teachers</button>
+     <button type="button"  class="btn btn-dark" onclick="showTableStudents()">Show table of Students</button>
+     <button type="button"  class="btn btn-dark" onclick="hideTable()">Hide table</button>
+
+     <h3>   </h3>
+     <table id="DisplayTableID" class="table">  </table>
+     
+     <div class="alert alert-dark" role="alert">
+        Add new info:
+      </div>
+
+     <h3>   </h3>
+
+     <button type="button"  class="btn btn-dark" onclick="addPersonForm()">Add person</button>
+     <button type="button"  class="btn btn-dark" onclick="addTeacherForm()">Add teacher</button>
+     <button type="button"  class="btn btn-dark" onclick="addStudentForm()">Add student</button>
+     <button type="button"  class="btn btn-dark" onclick="hideForm()">Hide form</button>
+    
+     <div id="addFormID"> </div>    
+
+     <script src="app.js"> </script>
+     
+     </body>
+</html>
+
+  <div class="row">
+    <div class="col">
+      <label >First name</label>
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <label >Patronymic</label>
+      <input type="text" class="form-control" placeholder="Patronymic">
+    </div>
+    <div class="col">
+      <label>Last name</label>
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label>Birth Date</label>
+      <input type="text" class="form-control" placeholder="format: day.month.year">
+    </div>
+    <div class="col">
+      <label>Weight</label>
+      <input type="text" class="form-control" placeholder="The number">
+    </div>
+  </div>
+  <div class="row"></div>
+ </div>
+
+ <button type="button"  class="btn btn-dark" onclick="addPerson()">Input</button>
